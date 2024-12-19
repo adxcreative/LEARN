@@ -25,7 +25,7 @@ wandb=0.18.6
 ### Data Preparation
 
 To make a fair comparison, we use the same data as [Recformer](https://github.com/AaronHeee/RecFormer?tab=readme-ov-file). 
-The [pretrain data](https://drive.google.com/file/d/123AHjsvZFTeT_Mhfb81eMHvnE8fbsFi3/view) and [finetuning data](https://drive.usercontent.google.com/download?id=11wTD3jMoP_Fb5SlHfKr28NIMCnG_jOpy&export=download&authuser=0) are provided in Google Drive.
+The [pretrain data](https://drive.usercontent.google.com/download?id=11wTD3jMoP_Fb5SlHfKr28NIMCnG_jOpy&export=download&authuser=0) and [finetuning data](https://drive.google.com/file/d/123AHjsvZFTeT_Mhfb81eMHvnE8fbsFi3/view) are provided in Google Drive.
 
 1. Download the data and put them in the data folder.
 2. Run the following command to generate the train_product/val_product/test_product files.
@@ -43,7 +43,7 @@ python preprocess/amazon_2018/build_item_baichuan_lmdb_pretrain.py
 python preprocess/amazon_2018/extract_baichuan_emb_ft.py
 python preprocess/amazon_2018/build_item_baichuan_lmdb_ft.py
 ```
-5. Prepare datasets to have following structure. The item embedding files can be downloaded from [here](https://drive.google.com/file/d/11wTD3jMoP_Fb5SlHfKr28NIMCnG_jOpy/view?usp=sharing).
+5. Prepare datasets to have following structure. 
 
 ```
 amazon_2018
@@ -99,7 +99,7 @@ bash run_finetune.sh
 
 The following LERAN results can be reproduced by our code.
 The other results can be found in the corresponding paper [RecFormer](https://dl.acm.org/doi/abs/10.1145/3580305.3599519)(KDD 2023), [SAID](https://dl.acm.org/doi/abs/10.1145/3589335.3648307)(WWW 2024), [CALRec](https://dl.acm.org/doi/abs/10.1145/3640457.3688121)(RecSys 2024).
-The [checkpoints](https://drive.google.com/drive/folders/12QXyYftF0r06ie2j9kc6XPbOpgA78dQN?usp=drive_link) are also provided.
+The [checkpoints](https://drive.google.com/drive/folders/12QXyYftF0r06ie2j9kc6XPbOpgA78dQN?usp=drive_link) and item embeddings for the Instruments dataset are also provided for reference.
 
 
 | Dataset | Metric | GRU4Rec | SASRec | BERT4Rec | RecGURU | FDSA | S³-Rec | ZESRec | UniSRec | RecFormer | SAID       | CALRec | LEARN | 
