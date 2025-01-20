@@ -1,7 +1,7 @@
 ## LEARN: Knowledge Adaptation from Large Language Model to Recommendation for Practical Industrial Application
 
 
-This repository contains the official implement of [LEARN](https://arxiv.org/abs/2405.03988) accepted to AAAI2025.
+This repository contains the official implement of [LEARN](https://arxiv.org/abs/2405.03988) accepted to AAAI2025 as an oral presentation.
 <p align="center">
     <br>
     <img src="assets/cr_compare.png" width="800" />
